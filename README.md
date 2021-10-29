@@ -1,4 +1,4 @@
-COMP 5630 - Machine Learning Spring 2021 Final Project
+COMP 5630 - Machine Learning Spring 2021 Final Group Project
 Below is the required information and format per project specs.
 
 appendPAS.py: reads final historical Player Ability Scores, appends to relevant entries in full data-set -AGG
