@@ -8,16 +8,11 @@ createWinrateDF.py: Scrapes win percentage data from op.gg to populate winrate r
 
 display.py: Pulls in results from scalability trials for each baseline and final algorithm, plots fit vs predict times for each algorithm, maps overall final performance of each algorithm -VIS
 
-getTeamscore.py: Calculates zscore based on individual champion -DATA
+nnMLPClassifier.py: Single-runs NN trials, and performs complete scalability trial, outputs results to be used by display -ALGO
 
-mlpClassifier.py: Single-runs NN trials, and performs complete scalability trial, outputs results to be used by display -ALGO
+NaiveBayes.py: Single-runs NB trials, and performs complete scalability trial, outputs results to be used by display -ALGO
 
-multinomial.py: Single-runs NB trials, and performs complete scalability trial, outputs results to be used by display -ALGO
-
-neighbors.py: Single-runs kNN trials, and performs complete scalability trial, outputs results to be used by display -ALGO
-
-neural_network.ipynb: Evaluation and assessment of the final product's feasibility, variations in layer sizes and quantity
-    comparisons, confusion matrices.
+kNearestNeighbors.py: Single-runs kNN trials, and performs complete scalability trial, outputs results to be used by display -ALGO
 
 newerWeights.py: Uses final updated process to assess how weighted each objective and statistics should be in 
     the player ability score calculations. Also assists in data-set review to identify useless features -AGG/DATA
@@ -32,15 +27,11 @@ playerDict.py: Used by player ability score calculation to populate the set of r
 
 preProcess.py: combines averages of multiple scalability trials for algorithms, outputs final average to file -DATA
 
-teamCompTest.py: Shows results of team composition aggregative scoring against fresh test data -AGG
-
-teamCompTrain.py: Trains the network to identify and assign team composition scores based on character selections -AGG
-
-tree.py: Single-runs decision tree trials, and performs complete scalability trial, outputs results to be used by display -ALGO
+decisionTree.py: Single-runs decision tree trials, and performs complete scalability trial, outputs results to be used by display -ALGO
 
 txtToParquet.py: Simply converts test files to parquets, used in exchanging data between team members -DATA
 
-vector.py: Single-runs SVM trials, and performs complete scalability trial, outputs results to be used by display -ALGO
+SVM.py: Single-runs SVM trials, and performs complete scalability trial, outputs results to be used by display -ALGO
     
 The commands related to feature weighting and aggregative scoring (AGG/DATA) were mostly used in the initial phases of data-review and the tweaking of scoring calculations. These commands must only be called once at product initialization in order to populate weighted lists of features for aggregative scoring, and to clean the dataset for method use.
 
