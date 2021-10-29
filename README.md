@@ -1,3 +1,6 @@
+COMP 5630 - Machine Learning Spring 2021 Final Project
+Below is the required information and format per project specs.
+
 appendPAS.py: reads final historical Player Ability Scores, appends to relevant entries in full data-set -AGG
 
 callAPI.py: Scrapes data from Riot Games API to populate dataset -DATA
@@ -36,3 +39,6 @@ SVM.py: Single-runs SVM trials, and performs complete scalability trial, outputs
 The commands related to feature weighting and aggregative scoring (AGG/DATA) were mostly used in the initial phases of data-review and the tweaking of scoring calculations. These commands must only be called once at product initialization in order to populate weighted lists of features for aggregative scoring, and to clean the dataset for method use.
 
 Aggregative score (AGG) calculation methods are only run once on the data-set to initialize and append these values to the fully populated dataset. Each baseline and the final model (ALGO) are then run independently to parse performance metrics, which in turn were read by display.py (VIS) to produce clear and organized graphing of each of our models in order to identify areas of oppurtunity.
+
+
+Cao, Hui | Lin, Her-bo | Weeden, Alex | Zhou, Min
